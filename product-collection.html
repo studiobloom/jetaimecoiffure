@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Sat Apr 15 2023 17:37:39 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Sat Apr 15 2023 18:58:30 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6439a84080317772dc11c612" data-wf-site="62b3b47d315e343b420dde5c">
 <head>
   <meta charset="utf-8">
@@ -89,7 +89,7 @@ body {
     <h1 class="hero_tagline subpage">Product Collection</h1>
   </div>
   <div class="section_products wf-section">
-    <div class="product-bio"><img src="images/loreal.webp" loading="lazy" sizes="100vw" srcset="images/loreal-p-500.webp 500w, images/loreal-p-800.webp 800w, images/loreal-p-1080.webp 1080w, images/loreal.webp 1366w" alt="" class="banner-image">
+    <div class="product-bio"><img src="images/loreal.webp" loading="lazy" sizes="100vw" srcset="images/loreal.webp 500w, images/loreal.webp 800w, images/loreal.webp 1080w, images/loreal.webp 1366w" alt="" class="banner-image">
       <p class="paragraph-product"><strong class="bold-text-3"><em>L&#x27;Oréal Professionnel</em></strong><br>We take pride in being a L&#x27;Oréal Professionnel Salon, offering our clients the ultimate hair care experience. We trust this prestigious brand to bring your vision to life, both in-salon and through at-home care. L&#x27;Oréal Professionnel utilizes ground-breaking technology and concentrated formulas to transform all types of hair, ensuring exceptional results every time. Discover the range of L&#x27;Oréal Professionnel hair care, hair color, and hairstyling products at our salon today, and let us help you achieve the stunning look you desire!<br></p>
     </div>
     <div class="product-bio"><img src="images/15416633-Mod1.webp" loading="lazy" sizes="75vw" srcset="images/15416633-Mod1-p-500.webp 500w, images/15416633-Mod1-p-800.webp 800w, images/15416633-Mod1-p-1080.webp 1080w, images/15416633-Mod1.webp 1160w" alt="" class="product-image">
@@ -167,5 +167,16 @@ mobilevideo.setAttribute("muted", "");
 </script>
   <!--  END: Mobile Autoplay Video  -->
   <script> var mobilevideo = document.getElementsByTagName("video"); var i; for (i = 0; i < mobilevideo.length; i++) { mobilevideo[i].setAttribute("playsinline", ""); } </script>
+  <script>
+  const url = "https://www.youtube.com/embed/wkwYMwGS69g";
+  const VID_REGEX = /(?:https?:\/\/)?(?:www\.)?(?:youtube(?:-nocookie)?\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|\S*?[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/;
+  const match = url.match(VID_REGEX);
+  if (match) {
+    const ytid = match[1];
+    document.querySelectorAll(".video-embed iframe").forEach((iframe) => {
+      iframe.setAttribute("src", "https://www.youtube.com/embed/" + ytid);
+    });
+  }
+</script>
 </body>
 </html>

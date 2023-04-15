@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Sat Apr 15 2023 17:37:39 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Sat Apr 15 2023 18:58:30 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6439a84080317783f011c614" data-wf-site="62b3b47d315e343b420dde5c">
 <head>
   <meta charset="utf-8">
@@ -230,5 +230,16 @@ mobilevideo.setAttribute("muted", "");
 </script>
   <!--  END: Mobile Autoplay Video  -->
   <script> var mobilevideo = document.getElementsByTagName("video"); var i; for (i = 0; i < mobilevideo.length; i++) { mobilevideo[i].setAttribute("playsinline", ""); } </script>
+  <script>
+  const url = "https://www.youtube.com/embed/wkwYMwGS69g";
+  const VID_REGEX = /(?:https?:\/\/)?(?:www\.)?(?:youtube(?:-nocookie)?\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|\S*?[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/;
+  const match = url.match(VID_REGEX);
+  if (match) {
+    const ytid = match[1];
+    document.querySelectorAll(".video-embed iframe").forEach((iframe) => {
+      iframe.setAttribute("src", "https://www.youtube.com/embed/" + ytid);
+    });
+  }
+</script>
 </body>
 </html>

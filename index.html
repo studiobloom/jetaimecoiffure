@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Sat Apr 15 2023 17:37:39 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Sat Apr 15 2023 18:58:30 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6439a8408031779ff111c60b" data-wf-site="62b3b47d315e343b420dde5c">
 <head>
   <meta charset="utf-8">
@@ -53,70 +53,10 @@ body {
   background: rgba(0, 0, 0, 0.1);
 }
 </style>
-  <style>
-html {
-}
-.wrapper {
-	max-width: 680px;
-	margin: 60px auto;
-	padding: 0 20px;
-}
-.youtube {
-	background-color: #000;
-	margin-bottom: 30px;
-	position: relative;
-	padding-top: 56.25%;
-	overflow: hidden;
-	cursor: pointer;
-}
-.youtube img {
-	width: 100%;
-	top: -16.82%;
-	left: 0;
-	opacity: 0.7;
-}
-.youtube .play-button {
-	width: 90px;
-	height: 60px;
-	background-color: #333;
-	box-shadow: 0 0 30px rgba( 0,0,0,0.6 );
-	z-index: 1;
-	opacity: 0.8;
-	border-radius: 6px;
-}
-.youtube .play-button:before {
-	content: "";
-	border-style: solid;
-	border-width: 15px 0 15px 26.0px;
-	border-color: transparent transparent transparent #fff;
-}
-.youtube img,
-.youtube .play-button {
-	cursor: pointer;
-}
-.youtube img,
-.youtube iframe,
-.youtube .play-button,
-.youtube .play-button:before {
-	position: absolute;
-}
-.youtube .play-button,
-.youtube .play-button:before {
-	top: 50%;
-	left: 50%;
-	transform: translate3d( -50%, -50%, 0 );
-}
-.youtube iframe {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-}
-</style>
 </head>
 <body class="body">
   <div class="bg-div">
-    <div data-poster-url="videos/JetaimeBG2-transcode-poster-00001.jpg" data-video-urls="videos/JetaimeBG2-transcode-transcode.mp4,videos/JetaimeBG2-transcode-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video w-background-video w-background-video-atom"><video id="46d79b6c-2967-c67d-c8e0-014f649534c8-video" autoplay="" loop="" style="background-image:url(&quot;videos/JetaimeBG2-transcode-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+    <div data-poster-url="videos/JetaimeBG2-transcode-poster-00001.jpg" data-video-urls="videos/JetaimeBG2-transcode-transcode.mp4,videos/JetaimeBG2-transcode-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" id="video-loop" class="video-loop w-background-video w-background-video-atom"><video id="46d79b6c-2967-c67d-c8e0-014f649534c8-video" autoplay="" loop="" style="background-image:url(&quot;videos/JetaimeBG2-transcode-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
         <source src="videos/JetaimeBG2-transcode-transcode.mp4" data-wf-ignore="true">
         <source src="videos/JetaimeBG2-transcode-transcode.webm" data-wf-ignore="true">
       </video></div>
@@ -153,7 +93,7 @@ html {
   </div>
   <div class="hero wf-section">
     <h1 data-w-id="5b92993e-638a-bef0-6716-f2570593af03" style="opacity:0" class="hero_tagline"><span data-w-id="a924d5b2-1071-daa7-3f3d-e25d2a03dd54" class="h1_span">the best revenge is<br></span>beautiful hair<br></h1>
-    <div class="div-block-9"><img src="images/down_arrow.svg" loading="lazy" style="opacity:0.2" data-w-id="35a41568-9084-def4-9ba1-78604ba139d2" alt="" class="image-14"></div>
+    <div class="arrow-slot"><img src="images/down_arrow.svg" loading="lazy" style="opacity:0.2" data-w-id="35a41568-9084-def4-9ba1-78604ba139d2" alt="" class="arrow"></div>
   </div>
   <div class="section_home">
     <div class="w-layout-grid content_grid-home"><img src="images/IMG_9726.webp" id="w-node-_2c1e68ec-f382-10c3-3dfa-4bd38e0ce518-f111c60b" sizes="90vw" alt="Red Bank Salon Staff Jetaime Coiffure" width="596" srcset="images/IMG_9726-p-500.webp 500w, images/IMG_9726-p-800.webp 800w, images/IMG_9726-p-1080.webp 1080w, images/IMG_9726.webp 1192w" class="image-2">
@@ -167,7 +107,7 @@ html {
       </div>
     </div>
     <div class="youtube-embed">
-      <div class="youtube-embed w-embed w-iframe"><iframe style="width: 75vw; height: 42.1875vw;" src="https://www.youtube.com/embed/wkwYMwGS69g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe></div>
+      <div class="video-embed w-embed w-iframe"><iframe style="width: 75vw; height: 42.1875vw;" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe></div>
     </div>
     <div class="w-layout-grid content_grid-home">
       <div id="w-node-_2c1e68ec-f382-10c3-3dfa-4bd38e0ce523-f111c60b" class="feature_container">
@@ -220,25 +160,21 @@ mobilevideo.setAttribute("muted", "");
   <!--  END: Mobile Autoplay Video  -->
   <script> var mobilevideo = document.getElementsByTagName("video"); var i; for (i = 0; i < mobilevideo.length; i++) { mobilevideo[i].setAttribute("playsinline", ""); } </script>
   <script>
-( function() {
-	var youtube = document.querySelectorAll( ".youtube" );
-	for (var i = 0; i < youtube.length; i++) {
-		var source = "https://img.youtube.com/vi/"+ youtube[i].dataset.embed +"/sddefault.jpg";
-		var image = new Image();
-				image.src = source;
-				image.addEventListener( "load", function() {
-					youtube[ i ].appendChild( image );
-				}( i ) );
-				youtube[i].addEventListener( "click", function() {
-					var iframe = document.createElement( "iframe" );
-							iframe.setAttribute( "frameborder", "0" );
-							iframe.setAttribute( "allowfullscreen", "" );
-							iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1" );
-							this.innerHTML = "";
-							this.appendChild( iframe );
-				} );	
-	};
-} )();
+  const url = "https://www.youtube.com/embed/wkwYMwGS69g";
+  const VID_REGEX = /(?:https?:\/\/)?(?:www\.)?(?:youtube(?:-nocookie)?\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|\S*?[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/;
+  const match = url.match(VID_REGEX);
+  if (match) {
+    const ytid = match[1];
+    document.querySelectorAll(".video-embed iframe").forEach((iframe) => {
+      iframe.setAttribute("src", "https://www.youtube.com/embed/" + ytid);
+    });
+  }
+</script>
+  <script>
+window.onload = function(){
+var vid = document.querySelector("#video-loop video");
+vid.playbackRate = 0.9;
+}
 </script>
 </body>
 </html>
