@@ -97,6 +97,7 @@ a {
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
+  text-shadow: 0 0 12px #000, 0 0 6px #000;
 }
 
 .navbutton:hover {
@@ -176,36 +177,14 @@ a {
 }
 
 .video-loop {
-  position: static;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
+  display: block;
   min-height: 100%;
   min-width: 100%;
-  opacity: 0.85;
+  opacity: 0.75;
   filter: blur(1px);
+  mix-blend-mode: overlay;
   -o-object-fit: contain;
      object-fit: contain;
-}
-
-.hero_cta {
-  position: absolute;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  min-height: 400px;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.hero_cta.subpage {
-  min-height: auto;
-  outline-color: #262626;
-  outline-offset: 0px;
-  outline-style: solid;
-  outline-width: 3px;
 }
 
 .h1_span {
@@ -417,14 +396,6 @@ a {
 .partnerlogos {
   max-width: 50%;
   filter: brightness(80%);
-}
-
-.bg_overlay {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -webkit-backdrop-filter: none;
-          backdrop-filter: none;
 }
 
 .blogroll_grid {
@@ -815,17 +786,7 @@ a {
   height: 100%;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(180deg, transparent, #050505 3%, #080808 96%, transparent);
-}
-
-.youtube {
-  display: block;
-  margin-top: 10%;
-  margin-bottom: 10%;
-  background-color: #000;
-  background-image: url('../images/ytBanner.webp');
-  background-position: 50% 50%;
-  background-size: cover;
+  background-image: linear-gradient(180deg, transparent, #212121 19%, #1f1f1f 83%, transparent);
 }
 
 .section_products {
@@ -1047,13 +1008,6 @@ a {
   padding: 5%;
 }
 
-.grid-3 {
-  -ms-grid-columns: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: auto auto auto;
-  grid-template-rows: auto auto auto;
-}
-
 .testimonial-slider-large {
   position: relative;
   width: 100vw;
@@ -1108,35 +1062,10 @@ a {
   align-self: center;
 }
 
-.testimonial-image {
-  width: 60px;
-  height: 60px;
-  margin-right: 16px;
-  border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .testimonial-author-name {
   font-family: Valak, sans-serif;
   color: #bebebe;
   font-weight: 700;
-}
-
-.testimonial-image-two {
-  width: 350px;
-  height: 400px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.testimonial-author-image-three {
-  width: 50px;
-  height: 50px;
-  margin-right: 24px;
-  border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .testimonial-slider-arrow {
@@ -1190,7 +1119,7 @@ a {
 }
 
 .product-image {
-  width: 75%;
+  width: 40%;
   margin-bottom: 5%;
   background-image: linear-gradient(180deg, #343434, #cecece);
   mix-blend-mode: normal;
@@ -1228,8 +1157,13 @@ a {
 
 .bg-div {
   position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
   width: 100vw;
   height: 100vh;
+  background-image: linear-gradient(185deg, #949494, #474747);
 }
 
 .arrow {
@@ -1245,7 +1179,7 @@ a {
   bottom: 0%;
   display: flex;
   height: 5%;
-  padding-bottom: 10px;
+  margin-bottom: 1%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -1253,6 +1187,7 @@ a {
 
 .video-embed {
   display: flex;
+  width: 75%;
   height: 100%;
   margin-top: 10%;
   margin-bottom: 10%;
@@ -1261,11 +1196,66 @@ a {
   background-image: url('../images/ytBanner.webp');
   background-position: 0px 0px;
   background-size: contain;
+  box-shadow: 0 0 10px 9px rgba(75, 75, 75, 0.2);
+  outline-color: rgba(0, 0, 0, 0.42);
+  outline-offset: -2px;
+  outline-style: solid;
+  outline-width: 3px;
 }
 
-.yt-embed {
-  width: 100vw;
+.bridal_inquiries {
+  display: flex;
+  padding-top: 5%;
+  padding-bottom: 0%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bridal-image {
+  display: inline-block;
   height: 100%;
+  max-width: 75vw;
+  border-radius: 5px;
+  box-shadow: 0 0 14px 14px rgba(0, 0, 0, 0.2);
+  outline-color: rgba(0, 0, 0, 0.33);
+  outline-offset: -3px;
+  outline-style: solid;
+  outline-width: 3px;
+}
+
+.slider {
+  height: 75vh;
+  margin-bottom: 10%;
+  background-color: hsla(0, 0%, 86.7%, 0);
+}
+
+.slider-block {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+}
+
+.slide-nav {
+  display: none;
+}
+
+.icon-5 {
+  font-size: 3vw;
+}
+
+.icon-6 {
+  font-size: 3vw;
 }
 
 @media screen and (max-width: 991px) {
@@ -1325,6 +1315,7 @@ a {
   }
 
   .hero_tagline {
+    margin-bottom: 10%;
     font-size: 13vw;
     line-height: 11vw;
   }
@@ -1447,8 +1438,10 @@ a {
 
   .content_grid-home {
     margin-top: 5vh;
+    padding-bottom: 0%;
     grid-column-gap: 20px;
-    -ms-grid-columns: 1fr 1fr;
+        grid-template-areas: "Area-2 Area";
+    -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
   }
 
@@ -1490,12 +1483,33 @@ a {
     font-size: 3vw;
   }
 
+  .product-image {
+    width: 50%;
+  }
+
   .lottie-animation {
     top: 30vh;
   }
 
   .arrow-slot {
     height: 4%;
+    margin-bottom: 3%;
+  }
+
+  .video-embed {
+    width: 80%;
+  }
+
+  .bridal-slide {
+    max-width: 768.1817626953125vw;
+  }
+
+  .icon-5 {
+    font-size: 5vw;
+  }
+
+  .icon-6 {
+    font-size: 5vw;
   }
 }
 
@@ -1555,7 +1569,7 @@ a {
   }
 
   .hero_tagline {
-    margin-bottom: 15%;
+    margin-bottom: 25%;
   }
 
   .hero_tagline.subpage {
@@ -1563,11 +1577,6 @@ a {
   }
 
   .video-loop {
-    left: -50vw;
-    top: 0%;
-    right: 0%;
-    bottom: 0%;
-    min-width: auto;
     filter: blur(1px);
   }
 
@@ -1668,6 +1677,7 @@ a {
     margin-left: 0px;
     padding-right: 0px;
     padding-left: 0px;
+    border-radius: 9px;
     outline-color: #fff;
     outline-offset: 0px;
     outline-style: none;
@@ -1676,6 +1686,8 @@ a {
     font-size: 24px;
     font-style: italic;
     font-weight: 300;
+    text-decoration: underline;
+    text-shadow: 0 0 3px #252525, 0 0 4px #252525, 0 0 10px #252525, 0 0 12px #252525, 0 0 6px #252525;
   }
 
   .dropdown-list {
@@ -1827,7 +1839,7 @@ a {
 
   .content_grid-home {
     display: block;
-    padding-bottom: 60px;
+    padding-bottom: 5%;
     justify-items: stretch;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -1873,22 +1885,33 @@ a {
     width: 4%;
   }
 
-  .testimonial-image-two {
-    width: 100%;
-    height: auto;
+  .product-image {
+    width: 60%;
   }
 
   .lottie-animation {
     top: 25vh;
   }
 
-  .bg-div {
-    width: 300vw;
-    margin-left: -150vw;
-  }
-
   .arrow-slot {
     height: 4%;
+    margin-bottom: 10%;
+  }
+
+  .video-embed {
+    width: 95%;
+  }
+
+  .slider {
+    height: 55vh;
+  }
+
+  .icon-5 {
+    font-size: 7vw;
+  }
+
+  .icon-6 {
+    font-size: 7vw;
   }
 }
 
@@ -1944,17 +1967,13 @@ a {
     min-height: 20vh;
   }
 
+  .hero_tagline {
+    margin-bottom: 40%;
+  }
+
   .hero_tagline.subpage {
     margin-bottom: 3.5%;
     font-size: 48px;
-  }
-
-  .hero_cta.subpage {
-    width: 100%;
-    height: 100%;
-    min-height: 100%;
-    justify-content: flex-end;
-    align-items: flex-start;
   }
 
   .button {
@@ -2014,10 +2033,6 @@ a {
 
   .partnerlogos {
     max-width: 80%;
-  }
-
-  .bg_overlay {
-    height: 100vh;
   }
 
   .team-bio {
@@ -2233,16 +2248,16 @@ a {
     line-height: 5vw;
   }
 
-  .testimonial-author-image-three {
-    margin-right: 16px;
-  }
-
   .text-block-11 {
     font-size: 4vw;
   }
 
   .bold-text-7 {
     font-size: 5vw;
+  }
+
+  .product-image {
+    width: 75%;
   }
 
   .lottie-animation {
@@ -2255,6 +2270,31 @@ a {
     top: 0%;
     right: 0%;
     bottom: 0%;
+  }
+
+  .arrow-slot {
+    margin-bottom: 15%;
+  }
+
+  .bridal_inquiries {
+    display: block;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .slider {
+    height: 35vh;
+  }
+
+  .icon-5 {
+    padding-left: 20px;
+  }
+
+  .icon-6 {
+    margin-bottom: 128.858px;
+    padding-right: 55px;
   }
 }
 
