@@ -143,9 +143,9 @@ a {
 .hero.subpage {
   height: 35vh;
   min-height: 35vh;
-  background-image: url('../images/IMG_9728.webp'), url('../images/1.webp');
-  background-position: 50% 50%, 50% 50%;
-  background-size: cover, 1586px;
+  background-image: url('../images/IMG_9728.webp');
+  background-position: 50% 50%;
+  background-size: cover;
   box-shadow: inset 2px 0 12px 8px #131313;
   opacity: 1;
   mix-blend-mode: lighten;
@@ -1172,7 +1172,7 @@ a {
   font-size: 1.2vw;
 }
 
-.div-block-6 {
+.testimonial-blend {
   position: absolute;
   z-index: 2;
   display: block;
@@ -1241,7 +1241,7 @@ a {
   height: 100vh;
 }
 
-.div-block-8 {
+.bg-div {
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -1880,7 +1880,7 @@ a {
     top: 25vh;
   }
 
-  .div-block-8 {
+  .bg-div {
     width: 300vw;
     margin-left: -150vw;
   }
@@ -2247,7 +2247,7 @@ a {
     top: 20vh;
   }
 
-  .div-block-8 {
+  .bg-div {
     position: fixed;
     left: 0%;
     top: 0%;
