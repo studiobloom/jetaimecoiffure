@@ -812,6 +812,8 @@ a {
   display: flex;
   width: 100vw;
   height: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   flex-direction: column;
   align-items: center;
   background-image: linear-gradient(180deg, transparent, #050505 3%, #080808 96%, transparent);
