@@ -10,22 +10,6 @@
   grid-column-gap: 16px;
 }
 
-.w-embed-youtubevideo {
-  width: 100%;
-  position: relative;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  background-image: url('https://d3e54v103j8qbb.cloudfront.net/static/youtube-placeholder.2b05e7d68d.svg');
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
-.w-embed-youtubevideo:empty {
-  min-height: 75px;
-  padding-bottom: 56.25%;
-}
-
 body {
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
   color: #333;
@@ -834,9 +818,9 @@ a {
 }
 
 .youtube {
-  width: 75%;
-  margin-top: 2%;
-  margin-bottom: 3%;
+  display: block;
+  margin-top: 10%;
+  margin-bottom: 10%;
   background-color: #000;
   background-image: url('../images/ytBanner.webp');
   background-position: 50% 50%;
