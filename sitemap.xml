@@ -4,7 +4,7 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
 
 
 <url>
@@ -25,17 +25,17 @@
 <url>
   <loc>https://jetaimecoiffure.com/product-collection</loc>
   <lastmod>2023-04-27T23:29:52+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://jetaimecoiffure.com/gallery</loc>
   <lastmod>2023-04-27T23:29:52+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://jetaimecoiffure.com/bridal</loc>
   <lastmod>2023-04-27T23:29:52+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://jetaimecoiffure.com/contact-us</loc>
@@ -43,35 +43,11 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://jetaimecoiffure.com/team.html</loc>
+  <loc>https://jetaimecoiffure.com/before-after</loc>
   <lastmod>2023-04-27T23:29:52+00:00</lastmod>
   <priority>0.64</priority>
 </url>
-<url>
-  <loc>https://jetaimecoiffure.com/services.html</loc>
-  <lastmod>2023-04-27T23:29:52+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://jetaimecoiffure.com/product-collection.html</loc>
-  <lastmod>2023-04-27T23:29:52+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://jetaimecoiffure.com/gallery.html</loc>
-  <lastmod>2023-04-27T23:29:52+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://jetaimecoiffure.com/bridal.html</loc>
-  <lastmod>2023-04-27T23:29:52+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://jetaimecoiffure.com/contact-us.html</loc>
-  <lastmod>2023-04-27T23:29:52+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
+
 
 
 </urlset>

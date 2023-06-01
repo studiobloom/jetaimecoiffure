@@ -1599,7 +1599,7 @@ a {
     padding-bottom: 0;
   }
 
-  .social-media__button, .social-media__button.ig, .social-media__button.fb {
+  .social-media__button, .social-media__button.ig, .social-media__button.fb, .social-media__button.cta {
     width: 4em;
     height: 4em;
   }
