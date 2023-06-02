@@ -1714,7 +1714,7 @@ a {
     grid-auto-columns: 1fr;
     justify-items: center;
     padding-bottom: 0;
-    display: grid;
+    display: flex;
   }
 
   .bio-paragraph {
