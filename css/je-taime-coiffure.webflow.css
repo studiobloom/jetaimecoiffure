@@ -1591,6 +1591,12 @@ a {
 
   .team-bio.blogroll_grid-copy {
     align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .blogroll_grid {
+    display: flex;
   }
 
   .grid {
@@ -1598,9 +1604,11 @@ a {
   }
 
   .grid.staff {
+    flex-direction: column;
     grid-template-columns: 1fr;
     justify-items: center;
     padding-bottom: 0;
+    display: inline-block;
   }
 
   .social-media__button, .social-media__button.ig, .social-media__button.fb, .social-media__button.cta {
@@ -1712,6 +1720,7 @@ a {
     grid-template-rows: auto;
     grid-template-columns: 1fr;
     grid-auto-columns: 1fr;
+    align-items: center;
     justify-items: center;
     padding-bottom: 0;
     display: flex;
@@ -1766,6 +1775,11 @@ a {
     grid-template-columns: 1fr;
     grid-auto-columns: 1fr;
     justify-items: center;
+  }
+
+  .heading-15 {
+    flex-direction: column;
+    display: flex;
   }
 
   .button-social {
